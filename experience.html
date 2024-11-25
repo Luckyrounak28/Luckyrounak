@@ -1,0 +1,266 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Vishal Kumar - Experience
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hamburger-icon span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            background: #000;
+        }
+        .menu-links {
+            display: none;
+        }
+        .menu-links.open {
+            display: block;
+        }
+        .hamburger-icon.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-icon.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <nav class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-md p-4 flex justify-between items-center text-white">
+   <div class="text-xl font-bold">
+    Vishal Kumar
+   </div>
+   <div class="hidden md:flex space-x-4">
+    <a class="hover:text-yellow-300" href="index.html">
+        Home
+       </a>
+    <a class="hover:text-yellow-300" href="about.html">
+     About
+    </a>
+    <a class="hover:text-yellow-300" href="experience.html">
+     Experience
+    </a>
+    <a class="hover:text-yellow-300" href="project.html">
+     Projects
+    </a>
+    <a class="hover:text-yellow-300" href="blog.html">
+     Blogs
+    </a>
+    <a class="hover:text-yellow-300" href="contact.html">
+     Contact
+    </a>
+   </div>
+   <div class="md:hidden">
+    <div class="hamburger-icon cursor-pointer" onclick="toggleMenu()">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </div>
+    <div class="menu-links absolute right-0 mt-2 bg-white shadow-md rounded-md p-4 text-gray-900">
+        <a class="block py-2" href="index.html">
+            Home
+           </a>
+     <a class="block py-2" href="about.html">
+      About
+     </a>
+     <a class="block py-2" href="experience.html">
+      Experience
+     </a>
+     <a class="block py-2" href="project.html">
+      Projects
+     </a>
+     <a class="block py-2" href="blog.html">
+      Blogs
+     </a>
+     <a class="block py-2" href="contact.html">
+      Contact
+     </a>
+    </div>
+   </div>
+  </nav>
+  <section class="p-8 bg-white shadow-md mt-4" id="experience">
+   <p class="text-lg">
+    Explore My
+   </p>
+   <h1 class="text-3xl font-bold text-blue-600">
+    Experience
+   </h1>
+   <div class="mt-4">
+    <div class="flex flex-col md:flex-row mb-8">
+     <div class="md:w-1/3">
+      <h2 class="text-2xl font-bold text-blue-600">
+       Frontend Developer Intern
+      </h2>
+      <p class="text-gray-700">
+       ABC Tech Solutions
+      </p>
+      <p class="text-gray-500">
+       June 2022 - August 2022
+      </p>
+     </div>
+     <div class="md:w-2/3 mt-4 md:mt-0 md:ml-8">
+      <ul class="list-disc list-inside">
+       <li>
+        Developed responsive web pages using HTML, CSS, and JavaScript.
+       </li>
+       <li>
+        Collaborated with the design team to implement UI/UX designs.
+       </li>
+       <li>
+        Optimized web pages for maximum speed and scalability.
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row mb-8">
+     <div class="md:w-1/3">
+      <h2 class="text-2xl font-bold text-blue-600">
+       Backend Developer Intern
+      </h2>
+      <p class="text-gray-700">
+       XYZ Software Solutions
+      </p>
+      <p class="text-gray-500">
+       January 2022 - May 2022
+      </p>
+     </div>
+     <div class="md:w-2/3 mt-4 md:mt-0 md:ml-8">
+      <ul class="list-disc list-inside">
+       <li>
+        Developed and maintained server-side logic using Node.js and Express.
+       </li>
+       <li>
+        Integrated third-party APIs and services.
+       </li>
+       <li>
+        Ensured the security and scalability of the backend services.
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row mb-8">
+     <div class="md:w-1/3">
+      <h2 class="text-2xl font-bold text-blue-600">
+       Full Stack Developer Intern
+      </h2>
+      <p class="text-gray-700">
+       DEF Web Solutions
+      </p>
+      <p class="text-gray-500">
+       June 2021 - December 2021
+      </p>
+     </div>
+     <div class="md:w-2/3 mt-4 md:mt-0 md:ml-8">
+      <ul class="list-disc list-inside">
+       <li>
+        Worked on both frontend and backend development using MERN stack.
+       </li>
+       <li>
+        Built and deployed web applications on cloud platforms.
+       </li>
+       <li>
+        Collaborated with cross-functional teams to deliver high-quality products.
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="p-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-4" id="projects">
+   <p class="text-lg">
+    Browse My Recent
+   </p>
+   <h1 class="text-3xl font-bold">
+    Projects
+   </h1>
+   <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="bg-white shadow-md p-4 text-gray-900">
+     <img alt="Screenshot of CR Management System project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/MxUMePVw8I1ZK6MEftcN2UUXrEZK9c1c0SkBe7y4DDPwWGpnA.jpg" width="300"/>
+     <h2 class="text-2xl font-bold mt-4">
+      CR Management System
+     </h2>
+     <p class="mt-2">
+      A system created for managing the class representative works.
+     </p>
+     <div class="mt-4 flex space-x-4">
+      <a href="https://github.com/" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Github
+       </button>
+      </a>
+      <a href="https://github.com" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Live Demo
+       </button>
+      </a>
+     </div>
+    </div>
+    <div class="bg-white shadow-md p-4 text-gray-900">
+     <img alt="Screenshot of AquaExpress project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/nHdGi9QO5CYuC993V15rGtimzktMZHpp9Gz7IEqd6Nj2yI9E.jpg" width="300"/>
+     <h2 class="text-2xl font-bold mt-4">
+      AquaExpress
+     </h2>
+     <p class="mt-2">
+      A platform where people can order 20-liter water bottles for their functions, weddings, etc.
+     </p>
+     <div class="mt-4 flex space-x-4">
+      <a href="https://github.com/" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Github
+       </button>
+      </a>
+      <a href="https://github.com" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Live Demo
+       </button>
+      </a>
+     </div>
+    </div>
+    <div class="bg-white shadow-md p-4 text-gray-900">
+     <img alt="Screenshot of Personal Portfolio project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/bvPifzn3ZVwQfU3WGh3QMOEdeuzJBFmw9ZoZgu10mKAsWGpnA.jpg" width="300"/>
+     <h2 class="text-2xl font-bold mt-4">
+      Personal Portfolio
+     </h2>
+     <p class="mt-2">
+      A personal portfolio website showcasing my projects and skills.
+     </p>
+     <div class="mt-4 flex space-x-4">
+      <a href="https://github.com/" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Github
+       </button>
+      </a>
+      <a href="https://github.com" rel="noopener" target="_blank">
+       <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Live Demo
+       </button>
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <script>
+   function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            menuLinks.classList.toggle('open');
+            hamburgerIcon.classList.toggle('open');
+        }
+  </script>
+ </body>
+</html>

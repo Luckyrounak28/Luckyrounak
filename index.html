@@ -1,0 +1,486 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Vishal Kumar - Portfolio
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hamburger-icon span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            background: #000;
+        }
+        .menu-links {
+            display: none;
+        }
+        .menu-links.open {
+            display: block;
+        }
+        .hamburger-icon.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger-icon.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger-icon.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <nav class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-md p-4 flex justify-between items-center text-white">
+   <div class="text-xl font-bold">
+    Vishal Kumar
+   </div>
+   <div class="hidden md:flex space-x-4">
+    <a class="hover:text-yellow-300" href="index.html">
+        Home
+       </a>
+    <a class="hover:text-yellow-300" href="about.html">
+     About
+    </a>
+    <a class="hover:text-yellow-300" href="experience.html">
+     Experience
+    </a>
+    <a class="hover:text-yellow-300" href="project.html">
+     Projects
+    </a>
+    <a class="hover:text-yellow-300" href="blog.html">
+     Blogs
+    </a>
+    <a class="hover:text-yellow-300" href="contact.html">
+     Contact
+    </a>
+   </div>
+   <div class="md:hidden">
+    <div class="hamburger-icon cursor-pointer" onclick="toggleMenu()">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </div>
+    <div class="menu-links absolute right-0 mt-2 bg-white shadow-md rounded-md p-4 text-gray-900">
+        <a class="block py-2" href="index.html">
+            Home
+           </a>
+     <a class="block py-2" href="about.html">
+      About
+     </a>
+     <a class="block py-2" href="experience.html">
+      Experience
+     </a>
+     <a class="block py-2" href="project.html">
+      Projects
+     </a>
+     <a class="block py-2" href="blog.html">
+      Blogs
+     </a>
+     <a class="block py-2" href="contact.html">
+      Contact
+     </a>
+    </div>
+   </div>
+  </nav>
+  <section class="flex flex-col md:flex-row items-center p-8 bg-white shadow-md mt-4" id="profile">
+   <div class="w-32 h-32 md:w-48 md:h-48 overflow-hidden">
+    <img alt="Profile picture of Vishal Kumar in a square frame" class="w-full h-full object-cover" height="200" src="profile.jpg" width="200"/>
+   </div>
+   <div class="mt-4 md:mt-0 md:ml-8">
+    <p class="text-lg">
+     Hello, I'm
+    </p>
+    <h1 class="text-3xl font-bold text-blue-600">
+     Vishal Kumar
+    </h1>
+    <p class="text-xl text-gray-700">
+     B.Tech Computer Science and Engineering, 3rd Year
+    </p>
+    <div class="mt-4 flex space-x-4">
+     <a href="resume.pdf" rel="noopener" target="_blank">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+       See Resume
+      </button>
+     </a>
+     <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+      Contact Info
+     </button>
+    </div>
+    <div class="mt-4 flex space-x-4">
+     <a href="https://www.linkedin.com/in/vishal-kumar-a57721273/" rel="noopener" target="_blank">
+      <i class="fab fa-linkedin text-2xl text-blue-700 hover:text-blue-800">
+      </i>
+     </a>
+     <a href="https://github.com/Luckyrounak28" rel="noopener" target="_blank">
+      <i class="fab fa-github text-2xl text-gray-800 hover:text-gray-900">
+      </i>
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="p-8 bg-gradient-to-r from-green-400 to-blue-500 text-white mt-4" id="about">
+   <p class="text-lg">
+    Get To Know More
+   </p>
+   <h1 class="text-3xl font-bold">
+    About Me
+   </h1>
+   <div class="mt-4">
+    <div class="flex flex-col md:flex-row">
+     <div class="md:w-1/2">
+      <div class="flex items-center mb-4">
+       <i class="fas fa-graduation-cap text-2xl mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         Educational Experience
+        </h3>
+        <p>
+         2+ years Frontend/Backend Development
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center mb-4">
+       <i class="fas fa-university text-2xl mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         Education
+        </h3>
+        <p>
+         Bachelor of Computer Application
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="md:w-1/2 mt-4 md:mt-0 md:ml-8">
+      <p>
+       I'm
+       <span class="font-bold">
+        Vishal Kumar
+       </span>
+       , a
+       <span class="font-bold">
+        Web Developer
+       </span>
+       from India. I build websites with a focus on
+       <span class="font-bold">
+        JavaScript, css &amp; Html
+       </span>
+       considering all aspects of
+       <span class="font-bold">
+        web development
+       </span>
+       . I enjoy turning complex problems into simple, beautiful, and intuitive designs. A
+       <span class="font-bold">
+        Web Developer
+       </span>
+       who loves to solve problems.
+      </p>
+      <p class="mt-4">
+       I have experience building high-performing, responsive, beautiful web applications to deliver a unique, intuitive user experience that works. I also have a keen interest in
+       <span class="font-bold">
+        UI/UX
+       </span>
+       with some nice designing skills. I am a well-trained teammate who loves to share ideas and prioritizes communication to achieve goals within set deadlines. I enjoy being challenged and working on projects that require me to step outside of my comfort zone.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="p-8 bg-white shadow-md mt-4" id="experience">
+   <p class="text-lg">
+    Explore My
+   </p>
+   <h1 class="text-3xl font-bold text-blue-600">
+    Experience
+   </h1>
+   <section class="p-8 bg-white shadow-md mt-4" id="skills">
+    <p class="text-lg">
+     My Skills
+    </p>
+    <h1 class="text-3xl font-bold text-blue-600">
+     Skills
+    </h1>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fab fa-html5 text-4xl text-orange-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         HTML5
+        </h3>
+        <p>
+         Experienced
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fab fa-css3-alt text-4xl text-blue-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         CSS3
+        </h3>
+        <p>
+         Experienced
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fab fa-js text-4xl text-yellow-500 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         JavaScript
+        </h3>
+        <p>
+         Experienced
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fab fa-php text-4xl text-indigo-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         PHP
+        </h3>
+        <p>
+         Intermediate
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fas fa-database text-4xl text-green-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         MySQL
+        </h3>
+        <p>
+         Intermediate
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fas fa-code text-4xl text-purple-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         Web Development
+        </h3>
+        <p>
+         Experienced
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4">
+      <div class="flex items-center">
+       <i class="fas fa-laptop-code text-4xl text-teal-600 mr-4">
+       </i>
+       <div>
+        <h3 class="text-xl font-bold">
+         Frontend Development
+        </h3>
+        <p>
+         Experienced
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="p-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white mt-4" id="projects">
+    <p class="text-lg">
+     Browse My Recent
+    </p>
+    <h1 class="text-3xl font-bold">
+     Projects
+    </h1>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+     <div class="bg-white shadow-md p-4 text-gray-900">
+      <img alt="Screenshot of CR Management System project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/MxUMePVw8I1ZK6MEftcN2UUXrEZK9c1c0SkBe7y4DDPwWGpnA.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       CR Management System
+      </h2>
+      <p class="mt-2">
+       A system created for managing the class representative works.
+      </p>
+      <div class="mt-4 flex space-x-4">
+       <a href="https://github.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Github
+        </button>
+       </a>
+       <a href="https://github.com" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Live Demo
+        </button>
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-md p-4 text-gray-900">
+      <img alt="Screenshot of AquaExpress project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/nHdGi9QO5CYuC993V15rGtimzktMZHpp9Gz7IEqd6Nj2yI9E.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       AquaExpress
+      </h2>
+      <p class="mt-2">
+       A platform where people can order 20-liter water bottles for their functions, weddings, etc.
+      </p>
+      <div class="mt-4 flex space-x-4">
+       <a href="https://github.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Github
+        </button>
+       </a>
+       <a href="https://github.com" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Live Demo
+        </button>
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-md p-4 text-gray-900">
+      <img alt="Screenshot of Personal Portfolio project" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/bvPifzn3ZVwQfU3WGh3QMOEdeuzJBFmw9ZoZgu10mKAsWGpnA.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       Personal Portfolio
+      </h2>
+      <p class="mt-2">
+       A personal portfolio website showcasing my projects and skills.
+      </p>
+      <div class="mt-4 flex space-x-4">
+       <a href="https://github.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Github
+        </button>
+       </a>
+       <a href="https://github.com" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Live Demo
+        </button>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="p-8 bg-gradient-to-r from-yellow-400 to-red-500 text-white mt-4" id="blogs">
+    <p class="text-lg">
+     Have a Look on My Recent
+    </p>
+    <h1 class="text-3xl font-bold">
+     Blogs
+    </h1>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+     <div class="bg-gray-100 p-4 text-gray-900">
+      <img alt="Thumbnail of Blog 1" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/F8OE2oK2iEKhG1KNthPlQ4ItPwRRe50pyzc8RaEi1N0qlR6JA.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       "The Future of Web Development"
+      </h2>
+      <div class="mt-4">
+       <a href="https://medium.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Read
+        </button>
+       </a>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4 text-gray-900">
+      <img alt="Thumbnail of Blog 2" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/R2Xvtpb2PN4fGqPuyni0kNKSXstYpwF2nnB9Or7A4vLulR6JA.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       "Understanding JavaScript Closures"
+      </h2>
+      <div class="mt-4">
+       <a href="https://medium.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Read
+        </button>
+       </a>
+      </div>
+     </div>
+     <div class="bg-gray-100 p-4 text-gray-900">
+      <img alt="Thumbnail of Blog 3" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/XEkh7ak7Sf2yNSiUSDj7R0eEYLhlMqynrHbYcs28dF8eWGpnA.jpg" width="300"/>
+      <h2 class="text-2xl font-bold mt-4">
+       "CSS Grid vs. Flexbox: When to Use Which"
+      </h2>
+      <div class="mt-4">
+       <a href="https://medium.com/" rel="noopener" target="_blank">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+         Read
+        </button>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="p-8 bg-gradient-to-r from-teal-400 to-green-500 text-white mt-4" id="contact">
+    <p class="text-lg">
+     Get in Touch
+    </p>
+    <h1 class="text-3xl font-bold">
+     Contact Me
+    </h1>
+    <div class="mt-4 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+     <div class="flex items-center">
+      <i class="fas fa-envelope text-2xl mr-4">
+      </i>
+      <p>
+       <a class="hover:text-blue-500" href="mailto:luckyrounak2895@gmail.com">
+        luckyrounak2895@gmail.com
+       </a>
+      </p>
+     </div>
+     <div class="flex items-center">
+      <i class="fab fa-linkedin text-2xl mr-4">
+      </i>
+      <p>
+       <a class="hover:text-blue-500" href="https://www.linkedin.com/in/vishal-kumar-a57721273/" rel="noopener" target="_blank">
+        LinkedIn
+       </a>
+      </p>
+     </div>
+     <div class="flex items-center">
+      <i class="fab fa-github text-2xl mr-4">
+      </i>
+      <p>
+       <a class="hover:text-blue-500" href="https://github.com/Luckyrounak28" rel="noopener" target="_blank">
+        GitHub
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+  </section>
+  <script>
+   function toggleMenu() {
+            const menuLinks = document.querySelector('.menu-links');
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            menuLinks.classList.toggle('open');
+            hamburgerIcon.classList.toggle('open');
+        }
+  </script>
+ </body>
+</html>
